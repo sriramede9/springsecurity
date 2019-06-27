@@ -24,11 +24,18 @@
 		</i>
 	</p>
 
-<!-- Link to point leaders -->
+	<!-- Link to point leaders -->
 
-<a href="${pageContext.request.contextPath}/leaders">Leadership Meeting</a>
+	<a href="${pageContext.request.contextPath}/leaders">Leadership
+		Meeting</a>
 
-<br>
+	<br>
+
+	<!-- Add a link to systems -->
+	<a href="${pageContext.request.contextPath }/systems">IT systems
+		Meeting</a>
+
+
 
 	<form:form action="${pageContext.request.contextPath }/logout "
 		method="POST">

@@ -20,4 +20,13 @@ public class HomeController {
 
 		return "leaders";
 	}
+	
+	
+	//request mapping for /leaders
+
+	@GetMapping("/systems")
+	public String showsystemss() {
+
+		return "systems";
+	}
 }
