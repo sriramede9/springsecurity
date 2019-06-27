@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1" %>
+	pageEncoding="ISO-8859-1"%>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
@@ -15,17 +15,13 @@ body {
 	background: orange;
 }
 
-.error{
-
-
-
-
- color:White;
- 
-
-
+.error {
+	color: White;
 }
 
+.logout {
+	color: blue;
+}
 </style>
 
 </head>
@@ -47,6 +43,14 @@ body {
 				<em>Invalid credentials!!</em>
 			</c:if>
 		</div>
+		<div class="logout">
+			<c:if test="${param.logout != null}">
+
+				<em>You are logged out succesfully</em>
+			</c:if>
+
+		</div>
+
 		<br>
 
 
