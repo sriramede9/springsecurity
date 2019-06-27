@@ -24,6 +24,11 @@
 		</i>
 	</p>
 
+<!-- Link to point leaders -->
+
+<a href="${pageContext.request.contextPath}/leaders">Leadership Meeting</a>
+
+<br>
 
 	<form:form action="${pageContext.request.contextPath }/logout "
 		method="POST">
