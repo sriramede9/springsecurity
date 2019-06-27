@@ -26,15 +26,23 @@
 
 	<!-- Link to point leaders -->
 
-	<a href="${pageContext.request.contextPath}/leaders">Leadership
-		Meeting </a>[Only for Managers]
+	<security:authorize access="hasRole('MANAGER')" >
 
+		<a href="${pageContext.request.contextPath}/leaders">Leadership
+			Meeting </a>[Only for Managers]
+
+	</security:authorize>
 	<br>
 
 	<!-- Add a link to systems -->
-	<a href="${pageContext.request.contextPath }/systems">IT systems
-		Meeting</a>[Only for Admins]
 
+	<security:authorize access="hasRole('ADMIN')">
+
+
+		<a href="${pageContext.request.contextPath }/systems">IT systems
+			Meeting</a>[Only for Admins]
+
+</security:authorize>
 
 
 	<form:form action="${pageContext.request.contextPath }/logout "
