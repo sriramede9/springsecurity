@@ -27,13 +27,13 @@
 	<!-- Link to point leaders -->
 
 	<a href="${pageContext.request.contextPath}/leaders">Leadership
-		Meeting</a>
+		Meeting </a>[Only for Managers]
 
 	<br>
 
 	<!-- Add a link to systems -->
 	<a href="${pageContext.request.contextPath }/systems">IT systems
-		Meeting</a>
+		Meeting</a>[Only for Admins]
 
 
 
